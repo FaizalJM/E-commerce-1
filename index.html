@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopFlow - Modern Store</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+  
+  <header class="header">
+    <div class="header-content">
+      <div class="brand">
+        
+        
+     
+            
+            
+            <img src="/1789073044791.png" alt="ShopFlow Logo" class="logo" onerror="this.style.display='none'">
+            <span class="brand-text">Shop<span>Flow</span></span>
+          </div>
+          <a href="#cart" class="cart-trigger" id="cartTrigger">
+            🛒 Cart <span class="badge" id="cartCount">0</span>
+          </a>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+         
+  </header>
+  
+  <div class="cart-overlay" id="cartOverlay"></div>
+  
+  
+  
+  <main class="all">
+    
+    
+    
+    
+    <section class="controls-panel">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search" placeholder="Search products, headphones, smartwatches..." aria-label="Search products">
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="filters-group">
+        <select id="filCtg" aria-label="Filter by category">
+          <option value="alot of">All categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Audio & Sound">Audio & Sound</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Home & Design">Home & Design</option>
+          <option value="Wearables">Wearables</option>
+        </select>
+        
+        
+        
+        
+        
+        <select id="order" aria-label="Sort by price">
+          <option value="">Sort by price</option>
+          <option value="asc">Price: Low to High</option>
+          <option value="desc">Price: High to Low</option>
+        </select>
+      </div>
+    </section>
+    
+    
+    
+    
+    <div class="store-layout">
+      
+      <section class="products-section">
+        <h2 class="section-title">Our Products</h2>
+        <div id="product" class="products-container">
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      <aside class="cart-section" id="cartSection">
+        <div class="cart-card">
+          <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="cart-items-tag" id="cartItemsTag">0 items</span>
+              <button id="closeCart" class="close-cart">✕</button>
+          </div>
+          
+          <div id="cart" class="cart-items-list">
+            
+            <div class="empty-cart-msg">Your cart is empty right now.</div>
+          </div>
+          
+          <div class="cart-footer">
+            <div class="total-row">
+              <span class="total-label">Order Total:</span>
+              <p id="totally" class="total-value">$0.00</p>
+            </div>
+            <button type="button" class="btn-checkout" id="btnCheckout">Checkout</button>
+          </div>
+        </div>
+      </aside>
+      
+      
+      
+    </div>
+  </main>
+  <div class="product-modal-overlay" id="productModalOverlay"></div>
+
+<div class="product-modal" id="productModal">
+  <button id="closeModal" class="close-cart">✕</button>
+  <div id="productModalContent"></div>
+</div>
+</body>
+
+</html>
